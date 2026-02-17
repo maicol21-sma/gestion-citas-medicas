@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial - Gestión de Citas Médicas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Sistema de Gestión de Citas Médicas</h1>
+    <p>Tutorial básico con HTML, CSS y JavaScript</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#pacientes">pacientes</a></li>
+        <li><a href="#consultorio">Consultorio</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#historia">Historia Clínica</a></li>
+        <li><a href="#formulario">Formulario</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <section id="pacientes">
+    <h2>Gestión de Usuarios</h2>
+    <img src="img/pacientes.png" alt="Gestión de pacientes del sistema">
+    <p>
+        Este módulo permite administrar los pacientes del sistema,
+        asignando roles y permisos para garantizar la seguridad
+        y confidencialidad de la información.
+    </p>
+</section>
+<section id="consultorio">
+    <h2>Gestión de Consultorio</h2>
+    <img src="img/consultorio.png" alt="Consultorio médico">
+
+    <p>
+        Este módulo permite administrar la información del consultorio,
+        como el nombre, ubicación y especialidad, facilitando la
+        organización de la atención médica.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Consultorio</th>
+                <th>Especialidad</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Consultorio 1</td>
+                <td>Medicina General</td>
+                <td>Disponible</td>
+            </tr>
+            <tr>
+                <td>Consultorio 2</td>
+                <td>Pediatría</td>
+                <td>Ocupado</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+    <section id="citas">
+    <h2>Gestión de Citas Médicas</h2>
+    <img src="img/citas.png" alt="Agenda de citas médicas">
+    <p>
+        Permite registrar y organizar las citas médicas entre
+        pacientes y profesionales de la salud, mejorando
+        la planificación y la atención.
+    </p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Paciente</th>
+                    <th>Médico</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>Dra. López</td>
+                    <td>15/03/2026</td>
+                    <td>09:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+   <section id="historia">
+    <h2>Historia Clínica</h2>
+    <img src="img/historia_clinica.png" alt="Historia clínica del paciente">
+
+    <p>
+        La historia clínica almacena diagnósticos, tratamientos
+        y observaciones médicas, permitiendo un adecuado
+        seguimiento del estado de salud del paciente.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Paciente</th>
+                <th>Diagnóstico</th>
+                <th>Tratamiento</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan Pérez</td>
+                <td>Gripe común</td>
+                <td>Reposo e hidratación</td>
+                <td>10/03/2026</td>
+            </tr>
+            <tr>
+                <td>Ana Gómez</td>
+                <td>Dolor muscular</td>
+                <td>Analgésicos</td>
+                <td>12/03/2026</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <section id="formulario">
+        <h2>Formulario de Registro de Citas</h2>
+
+        <form id="formCita">
+            <label>Paciente:</label>
+            <input type="text" id="paciente" placeholder="Nombre del paciente">
+
+            <label>Médico:</label>
+            <input type="text" id="medico" placeholder="Nombre del médico">
+
+            <label>Fecha:</label>
+            <input type="date" id="fecha">
+
+            <label>Hora:</label>
+            <input type="time" id="hora">
+
+            <button type="submit">Registrar Cita</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>GFPI-F-135 V02 – Evidencia GA6-220501096-AA4-EV01</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
